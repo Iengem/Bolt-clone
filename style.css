@@ -91,7 +91,7 @@ ul li ul li{
     gap: 25px;
     width: 100%;
     padding: 35px 0;
-    padding-left: 50px;
+    padding-left: 40px;
     height: 7vh;
 }
 .btop ul li{
@@ -124,7 +124,7 @@ ul li ul li{
     background-color: rgb(46,184,117);
     display: flex;
     width: 100%;
-    min-height: 120vh;
+    height: 120vh;
 }
 .woman{
     object-fit: cover;
@@ -232,6 +232,7 @@ ul li ul li{
 .money{
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 .sign,.sign1{
     border: 0px;
@@ -578,4 +579,95 @@ footer{
 }
 .copyright{
     width: 90%;
+}
+@media only screen and (max-width:1120px){
+    .btop ul,.top{
+        display: none;
+    }
+    .bi-list{
+        display: flex;
+    }
+    .img{
+        flex-direction: column;
+        height: 150vh;
+    }
+    .req{
+        padding-top: 0;
+    }
+    .imgcont{
+        width: 100%;
+        height:60%;
+        gap: 10px;
+        padding-left: 3%;
+        padding-top: 10%;
+        justify-content: center;
+    }
+    .imgcont h1{
+        font-size: 48px;
+        line-height: 56px;
+    }
+    .imgcont p{
+        font-size: 16px;
+    }
+    .woman{
+        width:100%;
+        height:50%;
+    }
+    .req{
+        padding-top: 5%;
+        font-size: 16px;
+    }
+    .get{
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        padding-left: 0px;
+    }
+    .apple{
+        width: 140px;
+    }
+    .google{
+        width: 160px;
+    }
+    @media only screen and (max-width:1000px){
+        .mid{
+            padding: 0;
+        }
+        .earnmoney{
+            flex-direction: row;
+        }
+        .money{
+            width: 60%;
+        }
+        .earnmoney h2{
+            font-size: 24px;
+        }
+        .earnmoney p{
+            font-size: 16px;
+        }
+        .sign{
+            display: none;
+        }
+        .sign1{
+            font-size: 14px !important;
+            display: block;
+        }
+        .bmid-card h1{
+            font-size: 24px;
+        }
+        .bmid-card p{
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width:868px){
+        .earnmoney{
+            width: 100%;
+            border-radius: 0;
+            flex-direction: column;
+        }
+        .money{
+            z-index: 5;
+            align-items: center;
+        }
+    }
 }
