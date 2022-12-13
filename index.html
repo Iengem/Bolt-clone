@@ -24,33 +24,98 @@
             </div>
         </div>
         <div class="btop">
-            <span class="material-symbols-outlined bi-list1">menu</span>
+            <span class="material-symbols-outlined bi-list1"  onclick="sidebar()">menu</span>
             <img src = "images/Bolt.svg" alt="Bolt logo" class="logo">
             <ul>
-                <li><a href='#'>Products<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
-                <ul>
-                    <li><h2>Rides</h2><p>Request a ride in minutes!</p></li>
-                    <li><h2>Scooters</h2><p>Request a ride in minutes!</p></li>
-                    <li><h2>Car-sharing</h2><p>Request a ride in minutes!</p></li>
-                    <li><h2>Food delivery</h2><p>Request a ride in minutes!</p></li>
-                    <li><h2>Grocery delivery</h2><p>Request a ride in minutes!</p></li>
-                    <li><h2>Business</h2><p>Request a ride in minutes!</p></li>
-                </ul></li>
-                <li><a href='#'>Partner with Bolt<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
-                    <ul>
-                        <li><h2>Driver</h2><p>Earn extra money on your own</p></li>
-                        <li><h2>Scooters</h2><p>Request a ride in minutes!</p></li>
-                        <li><h2>Car-sharing</h2><p>Request a ride in minutes!</p></li>
-                        <li><h2>Food delivery</h2><p>Request a ride in minutes!</p></li>
-                        <li><h2>Grocery delivery</h2><p>Request a ride in minutes!</p></li>
-                        <li><h2>Business</h2><p>Request a ride in minutes!</p></li>
-                    </ul></li>
-                <li><a href='#'>Company<span class="material-symbols-outlined down">keyboard_arrow_down</span></a></li>
-                <li><a href='#'>Support</a></li>
-                <li><a href='#'>Cities<span class="material-symbols-outlined down">keyboard_arrow_down</span></a></li>
+                <div class="prod" onclick="drop1()"><a>Products<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                    <ul class="drop">
+                        <li><h2>Rides</h2><p>Request a ride in minutes!</p></li>
+                        <li><h2>Scooters</h2><p>2-wheel rental at your fingertips</p></li>
+                        <li><h2>Car-sharing</h2><p>Top-quality car rental at affordable prices</p></li>
+                        <li><h2>Food delivery</h2><p>Your favorite food, delivered fast</p></li>
+                        <li><h2>Grocery delivery</h2><p>All the essentials, at your door at 15-minutes</p></li>
+                        <li><h2>Business</h2><p>Manage business travel for your team and clients</p></li>
+                    </ul>
+                </div>
+                <div class="prod prod1" onclick="drop2()"><a href='#'>Partner with Bolt<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                    <ul class="drop1">
+                        <li><h2>Driver</h2><p>Earn extra money on your own schedule as a driver</p></li>
+                        <li><h2>Courier</h2><p>Get paid for delivering food and groceries</p></li>
+                        <li><h2>Restaurant or Store</h2><p>Get more orders! Add your restaurant or stores to Bolt Food</p></li>
+                        <li><h2>Fleet</h2><p>Earn more by adding your fleet to Bolt</p></li>
+                        <li><h2>Franchise</h2><p>Set up and run Bolt operations in your country</p></li>
+                    </ul>
+                </div>
+                <div class="prod2" onclick="drop3()"><a href='#'>Company<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                    <ul class="drop2">
+                        <li><h2>Careers <span>We are hiring</span></h2></li>
+                        <li><h2>About</h2></li>
+                        <li><h2>Green Plan</h2></li>
+                        <li><h2>Blog</h2></li>
+                        <li><h2>Press</h2></li>
+                    </ul>
+                </div>
+                <div><a href='#'>Support</a></div>
+                <div class="prod3" onclick="drop4()"><a href='#'>Cities<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                    <ul class="drop3">
+                        <li><h2>Our Cities</h2></li>
+                        <li><h2>Airports</h2></li>
+                        <li><h2>City Solutions</h2></li>
+                    </ul>
+                </div>
+            </ul>   
+        </div>
+    </div>
+    <div class="sidebar">
+        <div class="topbar">
+            <span class="material-symbols-outlined bi-list1" onclick="sidebarclose()">close</span>
+            <img src="images/Bolt.svg" alt="pic" class="logo">
+        </div>
+        <div class="midbar">
+            <div onclick="down()"><a>Products<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                <ul class="drop5">
+                    <li><h2>Rides</h2></li>
+                    <li><h2>Scooters</h2></li>
+                    <li><h2>Car-sharing</h2></li>
+                    <li><h2>Food delivery</h2></li>
+                    <li><h2>Grocery delivery</h2></li>
+                    <li><h2>Business</h2></li>
+                </ul>
+            </div>
+            <div onclick="down1()"><a href='#'>Partner with Bolt<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                <ul class="drop6">
+                    <li><h2>Driver</h2></li>
+                    <li><h2>Courier</h2></li>
+                    <li><h2>Restaurant or Store</h2></li>
+                    <li><h2>Fleet</h2></li>
+                    <li><h2>Franchise</h2></li>
+                </ul>
+            </div>
+            <div onclick="down2()"><a href='#'>Company<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                <ul class="drop7">
+                    <li><h2>Careers</h2></li>
+                    <li><h2>About</h2></li>
+                    <li><h2>Green Plan</h2></li>
+                    <li><h2>Blog</h2></li>
+                    <li><h2>Press</h2></li>
+                </ul>
+            </div>
+            <div><a href='#'>Support</a></div>
+            <div onclick="down3()"><a href='#'>Cities<span class="material-symbols-outlined down">keyboard_arrow_down</span></a>
+                <ul class="drop8">
+                    <li><h2>Our Cities</h2></li>
+                    <li><h2>Airports</h2></li>
+                    <li><h2>City Solutions</h2></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottombar">
+            <div class="global1"><img src="images/Za Warldo.svg" alt="pic"> <p>Global</p></div>
+            <p>&copy;2022 Bolt Technology OU</p>
         </div>
     </div>
     <div class="hero">
+        <div class="imgdark"></div>
         <div class="img">
             <div class="imgcont">
                 <h1 class="stuff">The fast, affordable way to ride.</h1>
@@ -218,5 +283,6 @@
             </div>
         </div>
     </footer>
+    <script src="index.js"></script>
 </body>
 </html>
