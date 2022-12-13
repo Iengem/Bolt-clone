@@ -14,18 +14,16 @@
     font-family: 'euclid';
     color: #2F313F;
 }
-.bi-list{
-    font-size: 16px;
-    height: 30px;
-    width: 30px;
+.bi-list1{
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: scale(1.50);
     border-radius: 50%;
-    padding: 5px;
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 300;
     background-color: rgb(244,244,246);
-    display:none;
+    display: none;
 }
 .top{
     display: flex;
@@ -91,7 +89,7 @@ ul li ul li{
     gap: 25px;
     width: 100%;
     padding: 35px 0;
-    padding-left: 40px;
+    padding-left: 20px;
     height: 7vh;
 }
 .btop ul li{
@@ -258,7 +256,6 @@ ul li ul li{
     height: 95vh;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-template-rows: 288px;
     place-content: center;
     place-items: center;
     gap: 30px;
@@ -274,7 +271,7 @@ ul li ul li{
 .cardcont{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 }
 .car{
     width: 180px;
@@ -324,7 +321,6 @@ ul li ul li{
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
 }
 .lowsec{
     width:50%;
@@ -352,7 +348,7 @@ ul li ul li{
     min-height: 60vh;
     display: grid;
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(3,1fr);
     padding: 30px 0;
     padding-left: 5%;
     place-content: center;
@@ -420,7 +416,7 @@ h1{
 }
 .below{
     background-color: rgb(46,184,117);
-    min-height: 60vh;
+    height: 25em;
     width: 100%;
     gap: 25px;
     display: flex;
@@ -456,16 +452,16 @@ footer{
 .footer{
     display: grid;
     grid-template-columns: repeat(4,1fr);
+    gap: 30px;
     padding-left: 5%;
     padding-bottom: 5%;
 }
 .bolt{
-    width: 120px;
-    max-height: 50%;
+    max-width: 30%;
 }
 .za-warldo{
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    max-height: 30px;
 }
 .endglobal{
     font-size: 20px;
@@ -516,6 +512,19 @@ footer{
     font-weight: 700;
     line-height: 30px;
     padding-bottom: 10px;
+}
+.request{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.request p{
+    color: rgb(172,174,188);
+}
+.request .get{
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
 }
 .footerglobe{
     display: flex;
@@ -580,27 +589,28 @@ footer{
 .copyright{
     width: 90%;
 }
-@media only screen and (max-width:1120px){
+@media only screen and (max-width:1000px){
     .btop ul,.top{
         display: none;
     }
-    .bi-list{
+    .bi-list1{
         display: flex;
     }
     .img{
         flex-direction: column;
-        height: 150vh;
     }
     .req{
         padding-top: 0;
     }
     .imgcont{
         width: 100%;
-        height:60%;
+        height:58%;
         gap: 10px;
         padding-left: 3%;
-        padding-top: 10%;
+        padding-right: 3%;
         justify-content: center;
+        padding-top: 10%;
+        padding-bottom: 30px;
     }
     .imgcont h1{
         font-size: 48px;
@@ -611,7 +621,7 @@ footer{
     }
     .woman{
         width:100%;
-        height:50%;
+        height:42%;
     }
     .req{
         padding-top: 5%;
@@ -629,34 +639,110 @@ footer{
     .google{
         width: 160px;
     }
-    @media only screen and (max-width:1000px){
-        .mid{
-            padding: 0;
+    .mid{
+        padding: 0;
+    }
+    .earnmoney{
+        flex-direction: row;
+    }
+    .money{
+        width: 60%;
+    }
+    .earnmoney h2{
+        font-size: 24px;
+    }
+    .earnmoney p{
+        font-size: 16px;
+    }
+    .sign{
+        display: none;
+    }
+    .sign1{
+        font-size: 14px !important;
+        display: block;
+    }
+    .bmid{
+        height: 70vh;
+    }
+    .bmid-card h1{
+        font-size: 24px;
+    }
+    .bmid-card p{
+        font-size: 16px;
+    }
+    .low{
+        background-color: white;
+        flex-direction: column-reverse;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+    }
+    .low .smartphone{
+        transform: none;
+        width: 95%;
+        z-index: 6;
+    }
+    .oval{
+        width: 65%;
+        height:65%;
+        position: absolute;
+        border-radius: 50%;
+        left: -150px;
+        background-color: rgb(217,253,229);
+    }
+    .oval1{
+        width: 150px;
+        height: 150px;
+        background-color: rgb(217,253,229);
+        position: absolute;
+        right: -90px;
+        border-radius: 50%;
+        top:0px;
+    }
+    .lowsec{
+        width: 100%;
+        gap: 30px;
+    }
+    .lowsec h1{
+        font-size: 34px;
+    }
+    .lowsec p{
+        font-size: 16px;
+    }
+    .media{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .buttons, .imgs{
+        display: flex;
+        justify-content: center;
+        width:100%;
+        gap: 10px;
+    }
+    .footer{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .copyright{
+        text-align: center;
+    }
+    .formalities{
+        height: 20vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    @media only screen and (max-width:912px){
+        .img{
+            height: 120%;
         }
-        .earnmoney{
-            flex-direction: row;
+        .imgcont{
+            height: 30em !important;
         }
-        .money{
-            width: 60%;
-        }
-        .earnmoney h2{
-            font-size: 24px;
-        }
-        .earnmoney p{
-            font-size: 16px;
-        }
-        .sign{
-            display: none;
-        }
-        .sign1{
-            font-size: 14px !important;
-            display: block;
-        }
-        .bmid-card h1{
-            font-size: 24px;
-        }
-        .bmid-card p{
-            font-size: 16px;
+        .woman{
+            height: 25em !important;
         }
     }
     @media only screen and (max-width:868px){
@@ -664,10 +750,158 @@ footer{
             width: 100%;
             border-radius: 0;
             flex-direction: column;
+            gap: 20px;
+        }
+        .imgcont{
+            padding-top: 100px;
         }
         .money{
+            width:100%;
             z-index: 5;
             align-items: center;
+        }
+        .bmid{
+            height: 50vh;
+        }
+    }
+    @media only screen and (max-width:768px){
+        .footer{
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .below h1{
+            font-size: 34px;
+        }
+        .belowp{
+            font-size: 16px;
+        }
+        .req,.dwnld-app{
+            width: 100%;
+            text-align: center;
+        }
+        .get{
+            justify-content: center;
+        }
+    }
+    @media only screen and (max-width:540px){
+        
+        .b-low{ 
+            grid-template-columns: repeat(1, 1fr);
+            gap:70px;
+        }
+        .imgcont{
+            padding-top: 0px;
+        }
+        .footer{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .bmid{
+            grid-template-columns: repeat(1, 1fr);
+            height: fit-content;
+        }
+        .buttons{
+            display: none;
+        }
+        .miniphone{
+            width: 60px;
+        }
+        .car{
+            width: 80px;
+        }
+        .wallet{
+            width:70px;
+        }
+        .b-low img{
+            width: 50px;
+            height: 50px;
+        }
+        .b-low-card{
+            flex-direction: row;
+        }
+        .bmid{
+            gap: 0px;
+            place-items: flex-start;
+            place-content: flex-start;
+            padding: 10% 0;
+            padding-left: 0;
+            gap: 60px;
+        }
+        .bmid-card{
+            flex-direction: row;
+        }
+        .b-low-text{
+            gap: 10px;
+        }
+        .b-low-text p{
+            font-size: 16px;
+        }
+        .cardcont h1{
+            font-size: 24px;
+        }
+        .cardcont p{
+            font-size: 16px;
+        }
+    }
+    @media only screen and (max-width:480px){
+        .imgcont{
+            height: 70%;
+            justify-content: center;
+            align-items: center;
+            padding-bottom: 0;
+        }
+        .apple{
+            width: 135px;
+        }
+        .google{
+            width: 150px;
+        }
+        .imgcont h1{
+            font-size: 48px;
+            width: 90%;
+        }
+        .woman{
+            height: 30%;
+        }
+        .earnmoney .money h2{
+            font-size: 22px !important;
+        }
+        .money p{
+            font-size: 15px;
+        }
+        .sign1{
+            font-size: 14px;
+            transform: none;
+        }
+        .request{
+            display: flex;
+        }
+        @media only screen and (max-width:280px){
+            .img{
+                height: 110vh;
+            }
+            .get{
+                flex-direction: column;
+            }
+            .req{
+                width: 70%;
+                text-align: left;
+                position: relative;
+            }
+            .bi-arrow-right{
+                position: absolute;
+                top: 0px;
+                right: -40px;
+            }
+            .money{
+                text-align: center;
+            }
+            .request{
+                align-items: flex-start;
+            }
+            .request .get{
+                width: 48%;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }
