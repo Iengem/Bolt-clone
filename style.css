@@ -701,6 +701,7 @@ li{
     height: 100vh;
     position: fixed;
     top: 0px;
+    cursor: pointer;
     width: 0;
     overflow-x: hidden;
     z-index: 400;
@@ -709,6 +710,9 @@ li{
     display: none;
     gap: 20px;
     flex-direction: column;
+}
+.sidebar::-webkit-scrollbar{
+    width: 10px;
 }
 .bottombar{
     height: 100%;

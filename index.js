@@ -85,7 +85,8 @@ function drop4(){
 function sidebar(){
     sidebar1.style.display = 'flex'
     sidebar1.style.width = '80%'
-    sidebar1.style.padding = '20px 25px'
+    sidebar1.style.padding = '15px 25px'
+    sidebar1.style.paddingBottom = '30px'
     document.querySelector('.imgdark').style.display ='block'
 }
 function sidebarclose(){
@@ -104,6 +105,9 @@ function down(){
     }
     else{
         drop5.style.display = 'flex'
+        drop7.style.display = 'none'
+        drop6.style.display = 'none'
+        drop8.style.display = 'none'
     }
 }
 function down1(){
@@ -112,6 +116,9 @@ function down1(){
     }
     else{
         drop6.style.display = 'flex'
+        drop7.style.display = 'none'
+        drop8.style.display = 'none'
+        drop5.style.display = 'none'
     }
 }
 function down2(){
@@ -120,6 +127,9 @@ function down2(){
     }
     else{
         drop7.style.display = 'flex'
+        drop8.style.display = 'none'
+        drop6.style.display = 'none'
+        drop5.style.display = 'none'
     }
 }
 function down3(){
@@ -128,5 +138,8 @@ function down3(){
     }
     else{
         drop8.style.display = 'flex'
+        drop7.style.display = 'none'
+        drop6.style.display = 'none'
+        drop5.style.display = 'none'
     }
 }
