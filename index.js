@@ -84,7 +84,7 @@ function drop4(){
 }
 function sidebar(){
     sidebar1.style.display = 'flex'
-    sidebar1.style.width = '33.75em'
+    sidebar1.style.width = '25.75em'
     sidebar1.style.padding = '15px 25px'
     sidebar1.style.paddingBottom = '30px'
     sidebar1.style.transition = '.5s'
