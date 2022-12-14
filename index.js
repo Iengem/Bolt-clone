@@ -84,14 +84,17 @@ function drop4(){
 }
 function sidebar(){
     sidebar1.style.display = 'flex'
-    sidebar1.style.width = '80%'
+    sidebar1.style.width = '33.75em'
     sidebar1.style.padding = '15px 25px'
     sidebar1.style.paddingBottom = '30px'
+    sidebar1.style.transition = '.5s'
     document.querySelector('.imgdark').style.display ='block'
 }
 function sidebarclose(){
     sidebar1.style.width = '0'
     sidebar1.style.padding = '0'
+    sidebar1.style.transition = '0s'
+    sidebar1.style.animationFillMode = 'none'
     document.querySelector('.imgdark').style.display ='none'
 }
 drop5 = document.querySelector('.drop5')
